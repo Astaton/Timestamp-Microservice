@@ -1,0 +1,19 @@
+extends layout
+
+block main
+	main.mainContent
+		div.container
+			h2 
+				bold Natural Date: 
+			if timeValid === true
+				p #{naturalTime}
+			else
+				p Null
+			br
+			h2
+				bold Unix Date:
+			if timeValid === true
+				p #{unixTime}
+			else
+				p Null
+			include includes/submitform.pug

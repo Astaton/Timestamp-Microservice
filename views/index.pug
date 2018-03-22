@@ -1,0 +1,16 @@
+extends layout
+
+block main
+	main.mainContent
+		div.container
+			h2 This service converts from natural date to Unix date and vice versa.
+			h3 Instructions:
+			p Enter and submit either a natrual date (ex: "June 29, 1981"), or a unix date (ex: "365227200").
+			br
+			include includes/submitform.pug
+			br
+			p Or type your request directly into the url.
+			p Natural date ex: www. .../convert/June 29, 1981
+			p Unix date ex: www. .../convert/365227200
+
+
